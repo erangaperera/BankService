@@ -32,8 +32,8 @@ public class BankService {
 		Customer customer;
 		customer = CustomerUtil.getCustomer(id); 
 		if (customer == null && id == 100){
-			customer = new Customer(100, "Eranga", "Perera", 1000000);
-			BankAccount bankAccount = new BankAccount(100100, "ABC", 500, customer.getId());
+			customer = new Customer(100, "Bill", "Gates", 1000000);
+			BankAccount bankAccount = new BankAccount(100100, "ABC001", 1000000, customer.getId());
 			customer.addBankAccount(bankAccount);
 		}
 		return customer;
